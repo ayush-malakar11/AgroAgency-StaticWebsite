@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Landform Gardening Category Responsive Website Template | Coming Soon </title>
+  <link rel="stylesheet" href="assets/css/style-freedom.css">
+</head>
+<body>
+
+
+<section class="w3l-coming-61-soon">
+	<!-- /coming-61-section -->
+	  <div class="coming-61-mian">
+		 <div class="wrapper">
+		   <div class="coming-61-top">
+				<div class="coming-61-info">
+					<h3>LandForm <span class="light">is Coming Soon </span></h3>
+
+					<ul class="counter-inner">
+						<li><span id="days"></span>days</li>
+						<li><span id="hours"></span>Hours</li>
+						<li><span id="minutes"></span>Minutes</li>
+						<li><span id="seconds"></span>Seconds</li>
+					</ul>
+
+					<form action="#" method="GET" class="d-flex coming-form">
+						<input type="email" placeholder="Enter your email" required="required">
+						<button type="submit"><span class="fa fa-paper-plane" aria-hidden="true"></span></button>
+					</form>
+					<div class="social-coming-soon">
+						<div class="social-coming-icons">
+							<a href="#" title="Facebook" class="footer-fb"><span class="fa fa-facebook" aria-hidden="true"></span></a>
+							<a href="#" title="Twitter" class="footer-tw"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+							<a href="#" title="Google Plus" class="footer-gg"><span class="fa fa-google-plus" aria-hidden="true"></span></a>
+							<a href="#" title="Linkedin" class="footer-lin"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
+					</div>
+						<div class="social-coming-button">
+							<a href="index.html" class="read-more black btn">Home Overview <span class="fa fa-angle-double-right" aria-hidden="true"></span></a>
+						</div>
+						
+					 </div>
+				 </div>
+				 
+			 </div>
+			
+		 </div>
+		 </div>
+		 <script>
+			const second = 1000,
+				minute = second * 60,
+				hour = minute * 60,
+				day = hour * 24;
+	
+			let countDown = new Date('dec 30, 2020 00:00:00').getTime(),
+				x = setInterval(function () {
+	
+					let now = new Date().getTime(),
+						distance = countDown - now;
+	
+					document.getElementById('days').innerText = Math.floor(distance / (day)),
+						document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+						document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+						document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+	
+					//do something later when date is reached
+					//if (distance < 0) {
+					//  clearInterval(x);
+					//  'IT'S MY BIRTHDAY!;
+					//}
+	
+				}, second)
+		</script>
+	 </section>
+   <!-- //coming-61-section -->
+  
